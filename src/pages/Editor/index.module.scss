@@ -1,0 +1,15 @@
+.editor {
+  height: 100vh;
+}
+
+@font-face {
+  font-family: "Impact";
+  src: local("Impact"),
+      url("../../fonts/impact.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Impact-meme";
+  src: local("Impact-meme"),
+      url("../../fonts/impact.ttf") format("truetype");
+}

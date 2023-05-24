@@ -1,0 +1,13 @@
+.inner {
+  display: flex;
+  .filter {
+    width: 120px;
+    margin-left: 20px;
+    .selectLabel {
+      color: white;
+    }
+    .select {
+      width: 100%;
+    }
+  }
+}

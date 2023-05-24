@@ -1,0 +1,121 @@
+body {
+  .widget {
+    padding-bottom: 0;
+    background: $dark-50;
+    border: 1px solid $dark-100;
+    color: $white;
+    border-radius: 0;
+    font-family: $font-tertiary;
+    font-weight: 300;
+    width: 285px;
+    height: auto;
+    color: $gray-50;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    // row-gap: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: none;
+
+    &.selected {
+      border: 1px solid $gray-100;
+      // box-shadow: $widget-shadow;
+
+      .meta {
+        color: $gray-150;
+      }
+
+      .title {
+        color: $white;
+      }
+
+      &:hover {
+        border: 1px solid $gray-100;
+      }
+    }
+
+    .imageWrapper {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // padding-bottom: 10px;
+      overflow: hidden;
+      // position: relative;
+
+      > span {
+        height: 100%;
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        // border: 1px solid $dark-150;
+      }
+    }
+
+    .infoContainer {
+      padding: 16px 12px;
+      // margin-top: auto;
+
+      .title {
+        transition: all 0.3s;
+        font-family: $font-secondary;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        min-width: 0;
+      }
+    }
+
+    .info {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .meta {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+
+        .row {
+          font-family: $font-secondary;
+          font-style: italic;
+          font-size: 13px;
+        }
+      }
+
+      .avatar {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &:hover {
+      border: 1px solid $dark-200;
+
+      .title {
+        color: $white;
+      }
+
+      .meta {
+        color: $gray-150;
+      }
+    }
+
+    &:active {
+      border: 1px solid $gray-50;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px; /* adjust it as needed */
+    }
+  }
+}
